@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<!-- Instructions -->
+<h1 class="display-1">Instruction Page of the game!</h1>
+<!--  -->
+<form action="/register_page" method="post">
+    <div class="mb-3">
+        <label for="text" class="form-label">LINK:</label>
+        <input type="text" class="form-control" id="link" placeholder="Enter LINK: " name="link">
+      </div>
+    <button type="submit" class="btn btn-primary">NEXT</button>
+</form>
+{% endblock %}

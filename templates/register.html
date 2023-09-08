@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<nav class="navbar navbar-expand-sm bg-light justify-content-center">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">GDSC NIT SILCHAR</a>
+      </li>
+    </ul>
+  </nav>
+<form action="/register" method="post">
+    <div class="mb-3">
+        <label for="text" class="form-label">Name:</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter Name: " name="name">
+      </div>
+    <div class="mb-3 mt-3">
+      <label for="text" class="form-label">Scholar ID:</label>
+      <input type="text" class="form-control" id="sch_id" placeholder="Enter Sch. Id" name="sch_id">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}
